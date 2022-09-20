@@ -1,4 +1,5 @@
-﻿/* Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+﻿
+/* Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
 a = 5; b = 7 -> max = 7
 a = 2 b = 10 -> max = 10
@@ -50,6 +51,19 @@ Console.WriteLine($"Number {max_number} is maximum");
 7 -> нет
 */
 
+Console.WriteLine("Input integer number: ");
+int number = Convert.ToInt32(Console.ReadLine ());
+if (number % 2 == 1)
+{
+Console.WriteLine($"Number {number} is odd");
+}
+else
+{
+Console.WriteLine($"Number {number} is even");
+}
+
+
+
 /* Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
 5 -> 2, 4
@@ -57,3 +71,19 @@ Console.WriteLine($"Number {max_number} is maximum");
 */
 
 
+int n = 1;
+Console.WriteLine("Input integer number: ");
+int current = Convert.ToInt32(Console.ReadLine ());
+Console.WriteLine("Even numbers from 1 to " + current);
+while (n <= current)
+
+if (current % 2 == 0)
+{
+Console.Write(current + " ");
+current++;
+}
+else
+{
+Console.WriteLine("No even numbers")
+
+}
